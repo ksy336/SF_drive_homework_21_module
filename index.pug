@@ -1,0 +1,77 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Частые вопросы
+        link(rel='stylesheet' type='text/css' href='dist/main.css')
+    body
+        header.header
+            nav.navigation-panel
+                .navigation-panel.navigation-panel__logo
+                    a.link(href='' target='_blank')
+                        img(src='src/images/Logo.svg' alt='Logotype')
+                .navigation-links
+                    a.navigation-links.navigation-links__about-us(href='' target='_blank') О нас
+                    a.navigation-links.navigation-links__conditions(href='' target='_blank') Условия
+                    a.navigation-links.navigation-links__faq(href='' target='_blank') Частые вопросы
+                    button.sign-up Войти
+        main.main
+            .main.main__logo
+                a.link.link1(href='' target='_blank')
+                    img(src='src/images/Vector.svg' alt='Vector image')
+            section.questions
+                h1.questions.questions__faq  Частые вопросы
+                p  Отвечаем на вопросы, которые у вас могут возникнуть.
+                .questions.questions__collapse
+                    button.collapsible(type='button')
+                        | Могу ли я отменить бронь?
+                        img(src='src/images/small%20vector.svg' alt='Small vector image')
+                    .questions.questions__content
+                .questions.questions__collapse
+                    button.collapsible(type='button')
+                        | Могу ли я вернуть деньги, если не подошёл автомобиль?
+                        img(src='src/images/small%20vector.svg' alt='Small vector image')
+                    .questions.questions__content
+                .questions.questions__collapse
+                    button.collapsible(type='button')
+                        | Что делать, если случилось ДТП?
+                        img(src='src/images/small%20vector.svg' alt='Small vector image')
+                    .questions.questions__content
+                .questions.questions__collapse
+                    button.collapsible(type='button')
+                        | Могу ли я оставить автомобиль в удобном для меня месте?
+                        a.button.btn1(href='' target='_blank')
+                            img(src='src/images/small%20vector.svg' alt='Small vector image')
+                        a.button.btn1(href='' target='_blank')
+                            img(src='src/images/row.svg' alt='Row')
+                    .questions.questions__content
+                        p
+                            | Данный вопрос обсуждается с собственником,
+                            br
+                            |  но как правило автомобиль нужно вернуть туда, где вы его получили.
+                .questions.questions__collapse
+                    button.collapsible(type='button')
+                        | Что делать, если собственник просит заплатить ему напрямую?
+                        a.link.link1(href='' target='_blank')
+                            img(src='src/images/small%20vector.svg' alt='Small vector image')
+                    .questions.questions__content
+                .questions.questions__collapse
+                    button.collapsible(type='button')
+                        | Должен ли я заправлять автомобиль?
+                        a.link.link1(href='' target='_blank')
+                            img(src='src/images/small%20vector.svg' alt='Small vector image')
+                    .questions.questions__content
+        footer.footer
+            a.inc(href='src/images/inc.svg' target='_blank' rel='nofollow')
+                img(src='src/images/inc.svg' alt='inc')
+            // Иконки
+            .icon
+                a.icon.icon__icon-vk(href='' target='_blank' rel='nofollow')
+                    img(src='src/images/vk.svg' alt='vk')
+                a.icon.icon__icon-instagram(href='' target='_blank' rel='nofollow')
+                    img(src='src/images/instagram.svg' alt='instagram')
+                a.icon.icon__icon-facebook(href='' target='_blank' rel='nofollow')
+                    img(src='src/images/facebook.svg' alt='facebook')
+        script(src='./dist/main.js')
+        noscript Ваш браузер не поддерживает Javascript
